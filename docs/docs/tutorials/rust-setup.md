@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ### My Guide to Rust
 
 * Primary author: [Lydia Schneider](https://github.com/lydiaschneider)
