@@ -1,2 +1,1 @@
-* Primary author: [Lydia Schneider](https://github.com/lydiaschneider)
-
+# Rust Setup Guide
