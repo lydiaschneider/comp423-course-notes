@@ -1,43 +1,102 @@
+### My Guide to Rust
+
 * Primary author: [Lydia Schneider](https://github.com/lydiaschneider)
+* Reviewer: [Akshaya Sundar](https://github.com/sundarak)
 
-Welcome to your Rust tutorial!
+Hello and welcome to my beginner's guide to Rust:
 
-Before we get started, here are some things you need:
-- Have VSCode downloaded on your computer. If you don't, follow this link: https://code.visualstudio.com/)
-- Basic knowledge of Git and Docker
 
-Step 1: Initialize a New Git Repository
+Here are some prerequisites before we get started:
+1) A GitHub account
+2) Git installed
+3) VS Code downloaded
+4) Docker installed
+5) Knowledge of command-line basics
 
-1.1) mkdir rust-dev-container 
-1.2) cd rust-dev-container
-1.3) git init
 
-Step 2: Create a DevContainter Configuration
-2.1) Create a .devcontainer directory and a devcontainer.json file inside it
-2.2) Edit the configuration of the json file so it looks something like this:
+Ok let's get started with Rust!!
 
-{
-    "name": "Rust Dev Container",
-    "image": "mcr.microsoft.com/vscode/devcontainers/rust:latest",
-    "features": {
-        "rust-analyzer": "latest"
-    }
-}
+Part 1: Project Setup: Creating a Repository
+1.1) Open your terminal and create a new directory for you project with the following commands
 
-Step 3: Create a Rust Project
-3.1) Create the new project without initializing a new repo: cargo new hello-comp423 --vcs none
-3.2) Cd into that new project: cd hello-comp423
+mkdir rust-dev-container
+cd rust-dev-container
 
-Step 4: Write a Basic Program
-4.1) Open src/main.rs
-4.2) Add the following Rust code:
+1.2) Initialize a Git repository with the following command
+
+git init
+
+1.3) Create a README file:
+
+echo "# Rust DevContainer Setup" > README.md
+git add README.md
+git commit -m "Initial commit with README"
+
+
+1.4) Log into GitHub and navigate to the Create a New Repository page
+1.5) Fill out the following details
+        Repository name: rust-devcontainer
+        Description: "Rust project setup using Dev Containers"
+        Visibility: Public
+1.6) Click Create Repository
+1.7) Link your local repository to GitHub with the following commands:
+
+git remote add origin https://github.com/<your-username>/rust-devcontainer.git
+git branch -M main
+git push --set-upstream origin main
+
+Part 2: Setting Up the Dev Container
+2.1) Make sure Docker is running and create a .devcontainer directory and configuration file with the following code:
+
+
+mkdir .devcontainer
+cd .devcontainer
+echo '{
+  "name": "Rust DevContainer",
+  "image": "mcr.microsoft.com/devcontainers/rust:latest",
+  "extensions": ["rust-lang.rust-analyzer"]
+}' > devcontainer.json
+
+2.2) Open the project in VS Code
+
+code ..
+
+2.3) When prompted, Reoped in Container to start to Dev Container
+2.4) Once inside the container, verify Rust is installed:
+
+rustc --version
+
+Part 3: Writing and Running Your First Rust Program
+3.1) Create a new Rust project with the following commands
+
+cargo new hello_comp423 --vcs none
+cd hello_comp423
+
+3.2) To write the "Hello COMP423", edit src/main.rs and replace the contents with the following:
 
 fn main() {
     println!("Hello COMP423");
 }
 
-Step 5: Build and Run the Program
-5.1) Compile the program: cargo build
-5.2) Run the program: cargo run
+3.3) Build the project:
+
+cargo build
+
+3.4) Compile and run the project: 
+
+cargo run
+
+This command compiles and runs the project in a single step whereas cargo build only compiles the code without executing it. This is similar to how gcc compiles programs in C, except you must run the executable manually.
+
+3.5) Pushing final changes to GitHub
+
+git add .
+git commit -m "Your message here"
+git push
+
+3.6) Ensure changes were made to you GitHub repository
+
+Congratulations! You've successfully set up a Rust Dev Container, written a program & pushed it to GitHub!
+
 
  
