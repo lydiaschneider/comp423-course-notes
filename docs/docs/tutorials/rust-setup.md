@@ -1,6 +1,8 @@
+### My Guide to Rust
+
 * Primary author: [Lydia Schneider](https://github.com/lydiaschneider)
 
-> **Note:** Hello and welcome to my beginner's guide to Rust:
+> **Note:** Some instructions from Parts 1 & 2 use information from Comp 423 Mkdocs Tutorial
 
 Here are some prerequisites before we get started:
 1) A GitHub account
@@ -8,6 +10,7 @@ Here are some prerequisites before we get started:
 3) VS Code downloaded
 4) Docker installed
 5) Knowledge of command-line basics
+
 
 Ok let's get started with Rust!
 
@@ -35,11 +38,14 @@ git commit -m "Initial commit with README"
 
 
 1.4) Log into GitHub and navigate to the Create a New Repository page
+
 1.5) Fill out the following details
-        Repository name: rust-devcontainer
-        Description: "Rust project setup using Dev Containers"
-        Visibility: Public
+    - Repository name: rust-devcontainer
+    - Description: "Rust project setup using Dev Containers"
+    - Visibility: Public
+
 1.6) Click Create Repository
+
 1.7) Link your local repository to GitHub with the following commands:
 
 ```bash
@@ -48,7 +54,7 @@ git branch -M main
 git push --set-upstream origin main
 ```
 
-###Part 2: Setting Up the Dev Container
+### Part 2: Setting Up the Dev Container
 2.1) Make sure Docker is running and create a .devcontainer directory and configuration file with the following code:
 
 ```bash
@@ -66,6 +72,7 @@ echo '{
 code ..
 ```
 2.3) When prompted, Reoped in Container to start to Dev Container
+
 2.4) Once inside the container, verify Rust is installed:
 
 ```bash
@@ -91,7 +98,7 @@ cargo build
 ```bash
 cargo run
 ```
-This command compiles and runs the project in a single step whereas cargo build only compiles the code without executing it. This is similar to how gcc compiles programs in C, except you must run the executable manually.
+> **Note:** This command compiles and runs the project in a single step whereas cargo build only compiles the code without executing it. This is similar to how gcc compiles programs in C, except you must run the executable manually.
 
 3.5) Pushing final changes to GitHub
 ```bash
@@ -101,5 +108,6 @@ git push
 ```
 3.6) Ensure changes were made to you GitHub repository
 
-!!! Note "Congratulations!" You've successfully set up a Rust Dev Container, written a program & pushed it to GitHub!
+### Congratulations! 
+You've successfully set up a Rust Dev Container, written a program & pushed it to GitHub!
 
