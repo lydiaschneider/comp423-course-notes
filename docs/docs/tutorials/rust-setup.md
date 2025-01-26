@@ -1,6 +1,6 @@
 * Primary author: [Lydia Schneider](https://github.com/lydiaschneider)
 
-Hello and welcome to my beginner's guide to Rust:
+!!! note "Hello and welcome to my beginner's guide to Rust:"
 
 Here are some prerequisites before we get started:
 1) A GitHub account
@@ -11,18 +11,21 @@ Here are some prerequisites before we get started:
 
 Ok let's get started with Rust!
 
-Part 1: Project Setup: Creating a Repository
+!!! note "Part 1: Project Setup: Creating a Repository"
 1.1) Open your terminal and create a new directory for you project with the following commands
 
+```bash
 mkdir rust-dev-container
 cd rust-dev-container
 
 1.2) Initialize a Git repository with the following command
 
+```bash
 git init
 
 1.3) Create a README file:
 
+```bash
 echo "# Rust DevContainer Setup" > README.md
 git add README.md
 git commit -m "Initial commit with README"
@@ -36,13 +39,15 @@ git commit -m "Initial commit with README"
 1.6) Click Create Repository
 1.7) Link your local repository to GitHub with the following commands:
 
+```bash
 git remote add origin https://github.com/<your-username>/rust-devcontainer.git
 git branch -M main
 git push --set-upstream origin main
 
-Part 2: Setting Up the Dev Container
+!!! note "Part 2: Setting Up the Dev Container"
 2.1) Make sure Docker is running and create a .devcontainer directory and configuration file with the following code:
 
+```bash
 mkdir .devcontainer
 cd .devcontainer
 echo '{
@@ -53,41 +58,44 @@ echo '{
 
 2.2) Open the project in VS Code
 
+```bash
 code ..
 
 2.3) When prompted, Reoped in Container to start to Dev Container
 2.4) Once inside the container, verify Rust is installed:
 
+```bash
 rustc --version
 
-Part 3: Writing and Running Your First Rust Program
+!!! note "Part 3: Writing and Running Your First Rust Program"
 3.1) Create a new Rust project with the following commands
-
+```bash
 cargo new hello_comp423 --vcs none
 cd hello_comp423
 
 3.2) To write the "Hello COMP423", edit src/main.rs and replace the contents with the following:
-
+```bash
 fn main() {
     println!("Hello COMP423");
 }
 
 3.3) Build the project:
-
+```bash
 cargo build
 
 3.4) Compile and run the project: 
-
+```bash
 cargo run
 
 This command compiles and runs the project in a single step whereas cargo build only compiles the code without executing it. This is similar to how gcc compiles programs in C, except you must run the executable manually.
 
 3.5) Pushing final changes to GitHub
-
+```bash
 git add .
 git commit -m "Your message here"
 git push
 
 3.6) Ensure changes were made to you GitHub repository
 
-Congratulations! You've successfully set up a Rust Dev Container, written a program & pushed it to GitHub!
+!!! Note "Congratulations!" You've successfully set up a Rust Dev Container, written a program & pushed it to GitHub!
+
