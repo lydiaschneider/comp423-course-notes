@@ -9,7 +9,7 @@ Here are some prerequisites before we get started:
 4) Docker installed
 5) Knowledge of command-line basics
 
-Ok let's get started with Rust!!
+Ok let's get started with Rust!
 
 Part 1: Project Setup: Creating a Repository
 1.1) Open your terminal and create a new directory for you project with the following commands
