@@ -53,6 +53,7 @@ git remote add origin https://github.com/<your-username>/rust-devcontainer.git
 git branch -M main
 git push --set-upstream origin main
 ```
+> **Note:** This only needs to be done one when pushing the initial commit. After this, git push will work without the need for --set-upstream
 
 ### Part 2: Setting Up the Dev Container
 2.1) Make sure Docker is running and create a .devcontainer directory and configuration file with the following code:
@@ -71,7 +72,7 @@ echo '{
 ```bash
 code ..
 ```
-2.3) When prompted, Reoped in Container to start to Dev Container
+2.3) When prompted, Reopen in Container to start to Dev Container. Make sure you have the Remote-Containser extension for VS Code installed to enable to Dev Container functionality.
 
 2.4) Once inside the container, verify Rust is installed:
 
