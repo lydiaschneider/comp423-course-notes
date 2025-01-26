@@ -1,6 +1,9 @@
+### My Guide to Rust
+
 * Primary author: [Lydia Schneider](https://github.com/lydiaschneider)
 
 Hello and welcome to my beginner's guide to Rust:
+
 
 Here are some prerequisites before we get started:
 1) A GitHub account
@@ -8,6 +11,7 @@ Here are some prerequisites before we get started:
 3) VS Code downloaded
 4) Docker installed
 5) Knowledge of command-line basics
+
 
 Ok let's get started with Rust!!
 
@@ -42,6 +46,7 @@ git push --set-upstream origin main
 
 Part 2: Setting Up the Dev Container
 2.1) Make sure Docker is running and create a .devcontainer directory and configuration file with the following code:
+
 
 mkdir .devcontainer
 cd .devcontainer
