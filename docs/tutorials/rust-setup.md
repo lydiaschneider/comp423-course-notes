@@ -97,6 +97,3 @@ git push
 3.6) Ensure changes were made to you GitHub repository
 
 Congratulations! You've successfully set up a Rust Dev Container, written a program & pushed it to GitHub!
-
-
- 
