@@ -3,6 +3,7 @@ plugins:
   - search
   - mkdocs-material
 theme:
+<<<<<<< HEAD
   name: 'material'
   custom_dir: 'overrides'
 
@@ -11,3 +12,10 @@ markdown_extensions:
       guess_lang: false
   - admonition
 
+=======
+  name: material
+
+markdown_extensions:
+  - pymdownx.superfences  # Enables code block syntax highlighting
+  - admonition   
+>>>>>>> 1965a8e637edb066bac762ed240a518d7de4f8f5

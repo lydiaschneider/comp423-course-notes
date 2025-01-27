@@ -3,7 +3,6 @@
 * Primary author: [Lydia Schneider](https://github.com/lydiaschneider)
 * Reviewer: [Akshaya Sundar](https://github.com/sundarak)
 
-
 Hello and welcome to my beginner's guide to Rust:
 
 
